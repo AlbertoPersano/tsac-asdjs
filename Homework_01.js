@@ -217,7 +217,7 @@ function ex_1_R(vettore){
     if (vettore.length == 0 || vettore[0] < 0){
         return 0;
     }else{
-        return vettore[0] + ex_1_r(vettore.slice(1));
+        return vettore[0] + ex_1_R(vettore.slice(1));
      }
 }
                         
@@ -234,7 +234,7 @@ function  ex_2_R(n, i, acc){
     if ( n < i){
         return acc;
     }else{
-     return  ex_2_r(n, i + 2, acc = acc + i);
+     return  ex_2_R(n, i + 2, acc = acc + i);
      }
 }
     
@@ -252,7 +252,7 @@ function  ex_3_R(a, con){
     }else if (con == a.length){
               return somma / a.length;
           }else{
-               somma = (a[0] +  ex_3_r(a.slice(1), con++))
+               somma = (a[0] +  ex_3_R(a.slice(1), con++))
            }
  
  
