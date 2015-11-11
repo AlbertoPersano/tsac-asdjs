@@ -154,7 +154,7 @@ qualsiasivettore = ["1", "2", "3", "4", "5"];
 
 
 function ex_9_I(vettore){
-    return qualsiasivettore.reverse();
+    return vettore.reverse();
 }
     
 
