@@ -101,11 +101,11 @@ function Node(i, undrnd){
     this.nd = undrnd;
 }
 
-function  Root(){
+function  linkedlist(){
         this.root = null;
 }
 
-Root.prototype.addNode = function(curnode, newnode){
+linkedlist.prototype.addNode = function(curnode, newnode){
     if (curnode.nd == null){
         curnode.nd = newnode;
     }
@@ -114,7 +114,7 @@ Root.prototype.addNode = function(curnode, newnode){
     }
 }
 
-Root.prototype.add = function(item){
+linkedlist.prototype.add = function(item){
     if (this.root == null){
         this.root = new Node(item, null);
     }
@@ -122,3 +122,21 @@ Root.prototype.add = function(item){
         this.addNode(this.root, new Node(item, null));
     }
 }
+
+function ex_1_a (vet){
+    function calcola(vet);
+}
+
+function ex_1_b (vet){
+    function sumesp(vet);
+}
+
+function ex_2 (vet){
+    function filtering(vet);
+}
+
+function ex_3 (vet){
+    function multstack(vet);
+}
+
+
