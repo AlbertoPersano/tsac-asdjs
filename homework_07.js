@@ -2,7 +2,7 @@
  * Created by Mach2 on 28/11/2015.
  */
 
-array = [1, 2, 3];
+
 function calcola(vet){
     if (vet.length == 0) {
         return 10;
@@ -11,9 +11,7 @@ function calcola(vet){
         return 5 * vet[0] + calcola(vet.slice(1));
     }
 }
-console.log(calcola(array));
 
-generico = [2, 3, 6, 5];
 
 function sumesp(vet){
     acc = 0;
@@ -28,9 +26,7 @@ function sumesp(vet){
         return sumesp(vet.slice(1));
     }
 }
-console.log(sumesp(generico));
 
-general = [4, 2, 6, 1, 3];
 
 function filtering(vet){
     var arrF = vet.filter (function(x) {return x % 2 == 0;});
@@ -38,8 +34,6 @@ function filtering(vet){
     var tot = faketot.reduce(function(acc, x){return acc + x;});
     return tot;
 }
-
-console.log(filtering(general));
 
 
 function Stack(){
@@ -74,7 +68,7 @@ console.log(astack);
 astack.peek();
 console.log(astack); **/
 
-anArray = [1, 2, 4, 5, 7];
+
 
 
 function multstack(vet){
@@ -90,8 +84,6 @@ function multstack(vet){
             dispari.push(vet[i]);
         }
     }
-    console.log(pari);
-    console.log(dispari);
 
     for(var j = 0; j < pari.myarray.length ; j++){
         var par = pari.pop();
@@ -103,18 +95,17 @@ function multstack(vet){
 
 }
 
-console.log(multstack(anArray));
 
 function Node(i, undrnd){
     this.item = i;
     this.nd = undrnd;
 }
 
-function  Root(){
+function  linkedlist(){
         this.root = null;
 }
 
-Root.prototype.addNode = function(curnode, newnode){
+linkedlist.prototype.addNode = function(curnode, newnode){
     if (curnode.nd == null){
         curnode.nd = newnode;
     }
@@ -123,7 +114,7 @@ Root.prototype.addNode = function(curnode, newnode){
     }
 }
 
-Root.prototype.add = function(item){
+linkedlist.prototype.add = function(item){
     if (this.root == null){
         this.root = new Node(item, null);
     }
@@ -132,7 +123,20 @@ Root.prototype.add = function(item){
     }
 }
 
-var t = new Root();
-t.add(5);
-t.add(6);
-console.log(t);
+function ex_1_a (vet){
+    function calcola(vet);
+}
+
+function ex_1_b (vet){
+    function sumesp(vet);
+}
+
+function ex_2 (vet){
+    function filtering(vet);
+}
+
+function ex_3 (vet){
+    function multstack(vet);
+}
+
+
